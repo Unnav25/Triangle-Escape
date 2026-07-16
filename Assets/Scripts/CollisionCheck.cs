@@ -7,7 +7,7 @@ public class CollisionCheck : MonoBehaviour
         if (other.CompareTag("Obstacle") && !isDead)
         {
             isDead = true;
-            Debug.Log("You're Dead");
+            Debug.Log("You've Lost!");
             // Stopping player movement
             GetComponent<PlayerMovement>().enabled = false;
         }
